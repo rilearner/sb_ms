@@ -14,8 +14,6 @@ public class LearnappApplication {
 		SpringApplication.run(LearnappApplication.class, args);
 	}
 
-	@GetMapping("/hello")
-	public String sayHello(@RequestParam(name =  "myName") String myName) {
-		return String.format("Hey Der %s! ", myName);
-	}
+
 }
+
