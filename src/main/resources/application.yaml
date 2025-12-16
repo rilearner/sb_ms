@@ -1,3 +1,15 @@
 spring:
   application:
     name: learnapp
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mylib
+server:
+  port: 8080
+eureka:
+  client:
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
